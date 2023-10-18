@@ -1,0 +1,346 @@
+
+    <style>
+        .dreptunghi {
+            height: 100px;
+            width: 1550px;
+            background-color: #454545;
+            background-image: url("IcoanaMagazin.png");
+            background-repeat: no-repeat;
+            background-position: 315px;
+            position: absolute;
+            left: -10px;
+        }
+
+        .denumire {
+            position: relative;
+            top: 55px;
+            left: 400px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .iconSearch {
+            position: relative;
+            top: 10px;
+            left: 830px;
+            width: 50px;
+        }
+
+        .coverImage {
+            position: absolute;
+            top: 108px;
+            left: -5px;
+            height: 1500px;
+            width: 1550px;
+        }
+
+        .search {
+            position: relative;
+            top: 25px;
+            left: 600px;
+            color: white;
+            height: 35px;
+        }
+
+        .button {
+            position: relative;
+            top: 25px;
+            left: 650px;
+            width: 80px;
+            color: black;
+            background-color: yellow;
+        }
+
+        .dots-container
+           {
+                position:absolute;
+                top:800px;
+                left:670px;
+           }
+
+
+           .dot
+          {
+               cursor:pointer;
+               height:15px;
+               width:15px;
+               margin:0 2px;
+               background-color:#bbb ;
+               border-radius: 50%;
+               display:inline-block;
+               transition: background-color 0.6 ease;
+          }
+
+           .active, .dot:hover
+           {
+               background-color: #717171;
+           }
+
+           .prev, .next {
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+            
+          
+}
+
+.next {
+    right: -320px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: -70px;
+  color:white;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+           .slidershow-container
+         {
+          max-width: 100%;
+          width:700px;
+          position:absolute;
+          margin:auto;
+          margin-top: 80px;
+          left: -100px;
+          right: 0;
+          
+     }
+
+           .mySlides
+           {
+               display:none;
+                width:100%;
+                margin: 0 auto;
+                
+            }
+
+
+            .sectiune
+            {
+              position:relative;
+              top:790px;
+              left:-20px;
+              height:300px;
+              width:1550px;
+              background-color: #454545;
+            }
+
+            .setIcon
+            {
+              position:relative;
+              top:500px;
+              left:300px;
+              display:inline-block;
+              margin-right:200px;
+            }
+            
+            .primultext
+            {
+              position:relative;
+              top:520px;
+              left:-760px;
+              display: inline-block;
+              margin-right:160px;
+              color:white;
+            }
+
+            .alDoileaText
+            {
+              position:relative;
+              top:510px;
+              left:600px;
+              color:white;
+            }
+            
+            .alTreileaText
+            {
+              position:relative;
+              top:490px;
+              left:860px;
+              color:white;
+            }
+
+            .alPatruleaText
+            {
+              position: relative;
+              top:470px;
+              left:1120px;
+              color:white;
+            }
+
+            .ps4 
+            {
+              position:relative;
+              top:530px;
+              left:315px;
+              background-color: blue;
+              height:100px;
+              width:300px;
+              background-image: url("ps4Icon.png");
+              background-repeat: no-repeat;
+              background-position: 110px;
+              background-size: 70px;
+              transition: background-color 0.3s;
+            }
+
+            .ps4:hover {
+            background-color: lightskyblue; 
+}
+
+            .xbox
+            {
+              position:relative;
+              top:428px;
+              left:860px;
+              background-color: green;
+              height:100px;
+              width:300px;
+              background-image: url("xboxIcon.png");
+              background-repeat: no-repeat;
+              background-position: 110px;
+              background-size: 70px;
+              transition: background-color 0.3s;
+            }
+
+            .xbox:hover
+            {
+              background-color: greenyellow; 
+            }
+
+            .produse
+            {
+              position:relative;
+              top:500px;
+              left:220px;
+              height:220px;
+              margin-right:130px;
+              display: inline-block;
+              transition: opacity 0.3s ease;
+              cursor:pointer;
+              
+            }
+
+            .titlu
+            {
+              position:relative;
+              top:470px;
+              left:610px;
+              color:white;
+              font-weight: bold;
+              font-size: 30px;
+            }
+
+            .produse:hover
+            {
+              box-shadow: 0 0 5px 2px white;
+            }
+
+            .baraRosie
+            {
+              position:relative;
+              top:528px;
+              left:-80px;
+              height:50px;
+              width:1620px;
+              background-color: red;
+              line-height: 50px;
+              text-align:center;
+              color:white;
+              
+            }
+
+           
+
+
+
+    </style>
+
+<div class="dreptunghi"></div>
+<div class="denumire">OnlineStoreGames</div>
+<img src="coverImage.png" class="coverImage">
+<input type="text" placeholder="Search..." class="search">
+<button type="submit" class="button">search</button>
+<div class="slidershow-container">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <div class="mySlides fade">
+       <img src="bloodborne.png" style="width:1500px; height:800px; position: relative; left:-350px; top:-30px;">
+      </div>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="mySlides fade">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <img src="batman.png" style="width:1500px; height:700px; position:relative; left:-355px; top:-30px;">
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <div class="mySlides fade">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <img src="codModernWarfare.png" style="width:1500px; height: 700px; position:relative; left:-350px; top:-30px;">
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</div>
+</div>
+<div class="sectiune"></div>
+<img src="actionIcon.png" class="setIcon">
+<img src="rpgIcon.png" class="setIcon">
+<img src="strategyIcon.png" class="setIcon">
+<img src="adventureIcon.png" class="setIcon">
+
+<div class="primultext">Action</div>
+<div class="alDoileaText">RPG</div>
+<div class="alTreileaText">Strategy</div>
+<div class="alPatruleaText">Adventure</div>
+<div class="ps4"></div>
+<div class="xbox"></div>
+<p class="titlu">Popular Games</p>
+<img src="gta5Ps4.png" class="produse">
+<img src="godOfWar.png" class="produse">
+<img src="diabloPs4.png" class="produse">
+<img src="rdrPs4.png" class="produse">
+<div class="baraRosie">
+  OnlineStoreGames@ 2023
+</div>
+
+
+
+
+<script>
+   let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
